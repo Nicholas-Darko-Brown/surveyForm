@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+  }
+  
+  #title, #description {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  #description {
+    font-style: italic;
+    padding-bottom: 40px;
+  }
+  
+  #survey-form {
+    background: #181e26;
+    color: #ffffff;
+    max-width: 50%;
+    margin: auto;
+    padding: 40px;
+    line-height: 2.5;
+    border-radius: 5px;
+  }
+  
+  #name, #email, #number, #dropdown, #comments, #submit {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  #submit {
+    background: #3bdb3e;
+    color: #ffffff;
+    font-weight: 800;
+  }
+  
+  #submit:hover {
+    background: #248525;
+  }

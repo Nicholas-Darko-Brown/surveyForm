@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <main>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">Thank you for taking the time to help us improve the platform</p>
+        <form id="survey-form">
+          <label id="name-label" for="name">Name</label> <br> 
+          <input id="name" type="text" name="name" placeholder="Enter your name" required/> <br> 
+          
+          <label id="email-label" for="email">Email</label> <br>
+          <input id="email" type="email" name="email" placeholder="Enter your email" required/> <br>
+          
+          <label id="number-label" for="number">Age (optional)</label> <br>
+          <input id="number" type="number" name="number" min="18" max="100" placeholder="Age"/> <br>
+          
+          <label for="dropdown">Which option best describes your current role? </label> <br>
+          <select id="dropdown" name="dropdown">
+            <option value="Select current role">Select current role</option>
+            <option value="Student">Student</option>
+            <option value="Full Time Job">Full Time Job</option>
+            <option value="Full Time Learner">Full Time Learner</option>
+            <option value="Prefer not no say">Prefer not no say</option>
+            <option value="Other">Other</option>
+          </select> <br /> <br /> 
+          
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <input type="radio" id="definitely" name="fav_choice" value="Definitely">
+        <label for="definitely">Definitely</label><br>
+        <input type="radio" id="maybe" name="fav_choice" value="Maybe">
+        <label for="maybe">Maybe</label><br>
+        <input type="radio" id="not sure" name="fav_choice" value="Not Sure">
+        <label for="not sure">Not Sure</label> <br /> <br /> 
+          
+          <p>What would you like to see improved? (Check all that apply)</p>
+          <input type="checkbox" value="front-end projects" id="frontend" name="frontend" />
+          <label for="frontend">Front-end Engineering</label> <br />
+          <input type="checkbox" value="back-end projects" id="backend" name="backend" />
+          <label for="backend">Back-end Development</label> <br />
+          <input type="checkbox" value="Full Stack Development" id="fullstack" name="fullstack" />
+          <label for="fullstack">Full Stack Development</label> <br />
+          <input type="checkbox" value="Data Science" id="datascience" name="datascience" />
+          <label for="datascience">Data Science</label> <br />
+          <input type="checkbox" value="Software Engineering" id="software" name="software" />
+          <label for="software">Software Engineering</label> <br /> <br /> 
+          
+          <p>Any comments or suggestions?</p>
+          <textarea id="comments" name="comments" rows="6" cols="40">Enter your comments here...</textarea> <br>
+          
+          <button id="submit">Submit</button>
+        </form>
+      </main>
+      
+</body>
+</html>
